@@ -63,7 +63,6 @@ LTSpice simulation of EMC filter has been conducted to mainly find out minimum v
 * Simulation result of Tone control circuit
 Simulation of tone control circuit suggests that better results (less attenuation of frequencies above 1kHz in potentiometer position when tone control shall have minimum impact) can be achieved when using 1Meg potentiometer. This is potential future improvement.
 <p align="center">
-
 	<img src="./ltspice/ToneControlSimulationCircuit.png" width="600" height="300"/>
 	<img src="./ltspice/ToneControlSimulationResult.png" width="600" height="800"/>
 </p>
