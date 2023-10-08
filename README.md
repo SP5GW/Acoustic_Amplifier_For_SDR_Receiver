@@ -51,5 +51,20 @@ Especially EMC prone components such as tone control RV2 were grounded (chassis)
 
 **Characteristics Measurements**
 
+**Simulations**
+
+* Simulation results of EMC filter
+LTSpice simulation of EMC filter has been conducted to mainly find out minimum value of inductor used. Results are depicted below:
+<p align="center">
+![](ltspice/EMCFilterSimulationCircuit.png)
+![](ltspice/EMCFilterSimulationResult.png)
+</p>
+
+* Simulation result of Tone control circuit
+<p align="center">
+![](ltspice/ToneControlSimulationCircuit.png)
+![](ltspice/ToneControlSimulationResult.png)
+<p>
+
 
 **References**
