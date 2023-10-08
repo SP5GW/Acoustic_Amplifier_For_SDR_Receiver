@@ -56,15 +56,17 @@ Especially EMC prone components such as tone control RV2 were grounded (chassis)
 * Simulation results of EMC filter
 LTSpice simulation of EMC filter has been conducted to mainly find out minimum value of inductor used. Results are depicted below:
 <p align="center">
-![](./ltspice/EMCFilterSimulationCircuit.png)
-![](./ltspice/EMCFilterSimulationResult.png)
+	<img src="./ltspice/EMCFilterSimulationCircuit.png" width="600" height="300"/>
+	<img src="./ltspice/EMCFilterSimulationResult.png" width="600" height="800"/>
 </p>
 
 * Simulation result of Tone control circuit
+Simulation of tone control circuit suggests that better results (less attenuation of frequencies above 1kHz) can be achieved when using 1Meg potentiometer. This is potential future improvement.
 <p align="center">
-![](ltspice/ToneControlSimulationCircuit.png)
-![](./ltspice/ToneControlSimulationResult.png)
-<p>
+
+	<img src="./ltspice/ToneControlSimulationCircuit.png" width="600" height="300"/>
+	<img src="./ltspice/ToneControlSimulationResult.png" width="600" height="800"/>
+</p>
 
 
 **References**
