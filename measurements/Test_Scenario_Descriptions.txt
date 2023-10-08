@@ -1,0 +1,113 @@
+This file includes description of test scenarios executed and documented with osciloscope 
+screenshoots.
+
+
+Screenshoot legend:
+    Channel 1 (blue) - input signal (measured at connection of R1 with R2)
+    Channel 2 (yello) - output signal (measured at speaker connector)
+
+Scenario 1 Maximum amplification Measurement for Speaker Channel when amplifier 
+is powered from none USB source
+
+    Key parameters:
+        Vcc = 12V
+        fin = 1kHz
+        Uin = max value, which does not cause output signal distortions
+        Speaker impedance = 8ohm
+        Speaker nominal power = 5W
+
+
+    File description:
+        DSO_2023-10-07 21-11-32_s1a - signal graph
+        DSO_2023-10-07 21-11-32_s1b - measurements of input signal
+        DSO_2023-10-07 21-11-32_s1c - measurements of output signal
+
+Scenario 2 Amplifier -3dB Bandwidth Measurement for Speaker Channel when amplifier 
+is powered by none USB source
+
+    Key parameters:
+        Vcc = 12V
+        Uin = max value, which does not cause output signal distortions
+        Speaker impedance = 8ohm
+        Speaker nominal power = 5W
+
+Measurement Method
+    Step 1: Set maximum input signal level, which does not cause distortion of output signal,
+    in our case there was no trace of distortion at maximum output of PC sound card. 
+    This step is done at f=1kHz (the assumption is that 1kHz signal has maximum amplification)
+    Step 2: Keep increasing frequency until output voltage drops by -3dB (equivalent voltage 
+    drop of 0.7071Uout at 1kHz for linear scale)
+    Step 3: When Uout drops to the level of 0.7071(Uout at 1kHz), which in our case is 
+    3.76V*0.7071=2.66V, the coresponding frequency is upper -3dB cutoff frequency
+    (10.6kHz in our case) for measured amplifier.
+    Step 4: Repeat steps 2 and 3, but lowering frequency this time until Uout drops by -3dB. 
+    In our case it was difficult to achieve such drop, but it can be assumed that it 
+    happens approximately at 25Hz, which is lower -3dB cutoff freqency for our amplifier.
+
+
+    File description:
+        DSO_2023-10-07 21-11-32_s2a - signal graph at upper cutoff freqency of 10.6kHz
+        DSO_2023-10-07 21-11-32_s2b - measurements of input signal at upper cutoff frequency
+        DSO_2023-10-07 21-11-32_s2c - measurements of output signal at upper cutoff frequency
+        DSO_2023-10-07 21-11-32_s2d - signal graph at lower cutoff freqency of 25Hz
+        DSO_2023-10-07 21-11-32_s2e - measurements of input signal at lower cutoff frequency
+        DSO_2023-10-07 21-11-32_s2f - measurements of output signal at lower cutoff frequency
+
+Scenario 3 Maximum amplification Measurement for Speaker Channel when amplifier 
+is powered from USB source (high distortions of output signal)
+
+    Key parameters:
+        Vcc = 5V
+        fin = 1kHz
+        Uin = max value (value, which caused no distortions in S1 when amplifier
+        was powered from 12V source)
+        Speaker impedance = 8ohm
+        Speaker nominal power = 5W
+
+    Measurement Method
+        This is essentially scenario 1, but this time amplifier is powered from 5V power source.
+
+    File description:
+        DSO_2023-10-07 21-11-32_s3a - signal graph showing significant distortions in output signal.
+        DSO_2023-10-07 21-11-32_s3b - measurements of input signal
+        DSO_2023-10-07 21-11-32_s3c - measurements of output signal
+
+Scenario 4 Maximum amplification Measurement for Speaker Channel when amplifier 
+is powered from USB source (no distortions of output signal)
+
+    Key parameters:
+        Vcc = 5V
+        fin = 1kHz
+        Speaker impedance = 8ohm
+        Speaker nominal power = 5W
+
+    Measurement Method
+        Step 1: Set maximum signal level available from PC sound card (Uin)
+        Step 2: Keep lowering it until there are no visible distortions to signal output from amplifier.
+        This is max. Uin, which does not cause distortions when amplifier is powered from USB.
+        In our case this is 680.5mV in amplitude.
+
+    File description:
+        DSO_2023-10-07 21-11-32_s4a - signal graph showing no distortions in output signal, at maximum input signal.
+        DSO_2023-10-07 21-11-32_s4b - measurements of input signal
+        DSO_2023-10-07 21-11-32_s4c - measurements of output signal
+
+Scenario 5 Maximum amplification Measurement for Speaker Channel when amplifier 
+is powered from USB source (no distortions of output signal)
+
+    Key parameters:
+        Vcc = 5V
+        fin = 1kHz
+        Headphones impedance = 32ohm
+        Uin = 670mV, level close to one which has been measured in scenario 4 
+        (switch to speaker shall no caused distortions)
+
+    Measurement Method
+        Step 1: Set signal level of PC sound card (Uin), close to one which has been found in scenario 4 (670mV)
+        Step 2: Measure output signal level for headphones. For headphones our amplifier in fact attenuates signal available 
+        from PC card by about 40%. This is to have comparable experience when switching between speaker and headphones.
+
+    File description:
+        DSO_2023-10-07 21-11-32_s5a - signal graph showing no distortions in output signal, at maximum input signal.
+        DSO_2023-10-07 21-11-32_s5b - measurements of input signal
+        DSO_2023-10-07 21-11-32_s5c - measurements of output signal
