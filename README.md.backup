@@ -62,9 +62,9 @@ LTSpice simulation of EMC filter has been conducted to mainly find out minimum v
 
 * Simulation result of Tone control circuit
 <p align="center">
-![](./ltspice/ToneControlSimulationCircuit.png)
+![](ltspice/ToneControlSimulationCircuit.png)
 ![](./ltspice/ToneControlSimulationResult.png)
-</p>
+<p>
 
 
 **References**
