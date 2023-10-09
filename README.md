@@ -50,10 +50,25 @@ To avoid EMC interference shielded or twisted cables where used to interconnect 
 Especially EMC prone components such as tone control RV2 were grounded (chassis). Interconnect cable between RVmax and RVslider on AVT 794 was twisted with ground wire for the same purpose.    
 
 **Characteristics Measurements**
+
+Speaker channel amplification based on measurements for scenario 4 (input signal 1kHz, Vcc=5V (amplifier powered from USB port) and Uin=0.68V): G=Uout/Uin = 1.37V/0.68V = 2 (see picture below). 
 <p align="center">
-	<img src="./measurements/Scenario1/SpeakerChannelAmplification.png" width="400" height="300"/>
+	<img src="./measurements/Scenario4/SpeakerChannelAmplificationAdjLevel.png" width="400" height="300"/>
+</p>
+Headphone channel attenuates sound card signal. Based measurements done in test scenario 5 (input signal 1kHz, Vcc= 5V) attenuation value is: G=Uout/Uin = 0.4V/0.67V = 0.6 (40% attenuation). 
+Change from speaker to headphones does not cause the change in perceived sound level (assuming volume knob is not adjusted).
+<p align="center">
 	<img src="./measurements/Scenario5/HeadphoneChannelAmplification.png" width="400" height="300"/>
 </p>
+
+When Vcc is increased to 12V Uin can be increased to 1.5V  without distortions present in output signal Uout for speaker channel (scenario 1), corresponding  gain for this scenario increases to G=3.76V/1.5V = 2.5.
+Please note however that when Vcc is switched to 5V (USB port) while Uin is kept on 1.5V then level of Uout distortions is unacceptable - scenario 3 (see picture below).
+<p align="center">
+	<img src="./measurements/Scenario3/SpeakerChannelDistortedOutput.png" width="400" height="300"/>
+</p>
+
+Based on measurements conducted as part of measurement scenario 2, -3dB bandwidth for speaker channel is 25Hz - 10.6kHz. No such measuremets were conducted for headphone channel. 
+
 
 **Simulations**
 
