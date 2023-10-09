@@ -50,6 +50,10 @@ To avoid EMC interference shielded or twisted cables where used to interconnect 
 Especially EMC prone components such as tone control RV2 were grounded (chassis). Interconnect cable between RVmax and RVslider on AVT 794 was twisted with ground wire for the same purpose.    
 
 **Characteristics Measurements**
+<p align="center">
+	<img src="./measurements/Scenario1/SpeakerChannelAmplification.png" width="400" height="300"/>
+	<img src="./measurements/Scenario5/HeadphoneChannelAmplification.png" width="400" height="300"/>
+</p>
 
 **Simulations**
 
@@ -63,7 +67,6 @@ LTSpice simulation of EMC filter has been conducted to mainly find out minimum v
 * Simulation result of Tone control circuit
 Simulation of tone control circuit suggests that better results (less attenuation of frequencies above 1kHz in potentiometer position when tone control shall have minimum impact) can be achieved when using 1Meg potentiometer. This is potential future improvement.
 <p align="center">
-
 	<img src="./ltspice/ToneControlSimulationCircuit.png" width="600" height="300"/>
 	<img src="./ltspice/ToneControlSimulationResult.png" width="600" height="800"/>
 </p>

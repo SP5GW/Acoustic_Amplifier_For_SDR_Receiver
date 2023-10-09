@@ -50,6 +50,10 @@ To avoid EMC interference shielded or twisted cables where used to interconnect 
 Especially EMC prone components such as tone control RV2 were grounded (chassis). Interconnect cable between RVmax and RVslider on AVT 794 was twisted with ground wire for the same purpose.    
 
 **Characteristics Measurements**
+<p align="center">
+	<img src="./measurements/Scenario1/SpeakerChannelAmplification.png" width="400" height="300"/>
+	<img src="./measurements/Scenario5/HeadphoneChannelAmplification.png" width="400" height="300"/>
+</p>
 
 **Simulations**
 
