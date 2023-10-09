@@ -50,6 +50,11 @@ To avoid EMC interference shielded or twisted cables where used to interconnect 
 
 Especially EMC prone components such as tone control RV2 were grounded (chassis). Interconnect cable between RVmax and RVslider on AVT 794 was twisted with ground wire for the same purpose.    
 
+Amplifier's circuit diagram can be seen below:
+<p align="center">
+	<img src="./docs/CircuitDiagram.png" width="800" height="500"/>
+</p>
+
 **Characteristics Measurements**
 
 Speaker channel amplification based on measurements for scenario 4 (input signal 1kHz, Vcc=5V (amplifier powered from USB port) and Uin=0.68V): G=Uout/Uin = 1.37V/0.68V = 2 (see picture below). 
