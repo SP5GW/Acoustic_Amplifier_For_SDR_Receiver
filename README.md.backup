@@ -67,7 +67,7 @@ Please note however that when Vcc is switched to 5V (USB port) while Uin is kept
 	<img src="./measurements/Scenario3/SpeakerChannelDistortedOutput.png" width="400" height="300"/>
 </p>
 
-Based on measurements conducted as part of measurement scenario 2, -3dB bandwidth or speaker channel is 
+Based on measurements conducted as part of measurement scenario 2, -3dB bandwidth for speaker channel is 25Hz - 10.6kHz. No such measuremets were conducted for headphone channel. 
 
 
 **Simulations**

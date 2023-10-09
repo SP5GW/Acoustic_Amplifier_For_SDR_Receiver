@@ -5,6 +5,7 @@
 <img src="./img/amp_front.jpg" width="300" height="200"/>
 <img src="./img/amp_internal_view_1.jpg" width="300" height="200"/>
 </p>
+
 **Key Requirements**
 
 The main requirements for this amplifier are the following:
@@ -41,7 +42,7 @@ The following componets outside AVT kits were also added:
 
 Attempt was made to skip dedicated amplifier in headphone channel, but then it was not possible to find well working passive volume/tone control, which would control both speaker and headphones. This was a reason for adding AVT 794 to the design.
 
-Input voltage divider (R3 and R4) is designed to lower the maximum volume of the device to comfortable level and at the same time make speaker and headphone channel volume levels comparable for the same setting of volume knob RV1. In practice this means that headphone channel acts as power attenuator (approx. 40% attenuation) (see Fig. 1) while speaker channel amplifies input signal from PC's sound card by approx. 2.6 times (see Fig. 2).
+Input voltage divider (R3 and R4) is designed to lower the maximum volume of the device to comfortable level and at the same time make speaker and headphone channel volume levels comparable for the same setting of volume knob RV1. In practice this means that headphone channel acts as power attenuator (approx. 40% attenuation) while speaker channel amplifies input signal from PC's sound card by approx. 2.6 times (see measurement section for more details).
 
 When USB is used as a DC power source then in order to avoid distortions of output signal (see Fig. 3) the level of input signal provided by the sound card shall be reduced to the amplitude not exceeding 680mV. 
 
