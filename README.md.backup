@@ -52,7 +52,7 @@ Especially EMC prone components such as tone control RV2 were grounded (chassis)
 
 Amplifier's circuit diagram can be seen below:
 <p align="center">
-	<img src="./docs/CircuitDiagram.png" width="600" height="300"/>
+	<img src="./docs/CircuitDiagram.png" width="800" height="500"/>
 </p>
 
 **Characteristics Measurements**
@@ -94,3 +94,7 @@ Simulation of tone control circuit suggests that better results (less attenuatio
 
 
 **References**
+
+* <a href= "https://sklep.avt.pl/pl/products/wzmacniacz-mocy-10w-z-tda2003-kit-avt1744-167281.html?query_id=2">AVT 1744 </a>
+* <a href="https://sklep.avt.pl/pl/products/wzmacniacz-akustyczny-z-ukladem-lm386-kit-avt794-172112.html?query_id=3">AVT 794</a>  
+* <a href="https://www.ftdichip.com/Support/Documents/AppNotes/AN_146_USB_Hardware_Design_Guidelines_for_FTDI_ICs.pdf">USB Hardware Design Guidelines</a>
